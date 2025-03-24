@@ -1,0 +1,37 @@
+div{
+    padding-top:10px;
+    padding-bottom:20px;
+
+}
+.container{
+    background-color: hsl(219, 84%, 48%);
+    width:250px;
+}
+
+.imagem-card{
+    width:250px;
+}
+
+.descrição-card{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#90d314
+}
+
+.preço-card{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgb(13, 31, 199);
+    font: size 18px;
+}
+.pagamento-card{
+    font-size:10px;
+    color: aquamarine;
+
+}
+
+.botão-card{
+    background-color: #90d314;
+    color: black;
+
+}
