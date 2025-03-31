@@ -1,0 +1,67 @@
+/* Estilos gerais do menu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(214, 85, 85);
+    width: 100%;
+}
+
+/* Menu principal */
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens */
+}
+
+ul.menu > li {
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+ul.menu > li > a:hover {
+    background-color: rgb(14, 30, 167);
+}
+
+/* Submenu */
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 17, 204);
+    min-width: 180px; /* Largura mínima para o submenu */
+}
+
+ul.submenu li a {
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(6, 77, 44);
+    transition: background-color 0.3s;
+}
+
+ul.submenu li a:hover {
+    background-color: #666;
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item do menu */
+ul.menu > li:hover > .submenu {
+    display: block;
+}

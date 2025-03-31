@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Horizontal com Submenu</title>
+    <style>
+        /* Estilo do menu principal */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #333;
+            display: flex;
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .menu > li > a:hover {
+            background: #444;
+        }
+
+        /* Estilo do submenu */
+        .submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #444;
+            display: none;
+            min-width: 150px;
+        }
+
+        .submenu li {
+            border-bottom: 1px solid #555;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .submenu li a:hover {
+            background: #555;
+        }
+
+        /* Mostrar submenu ao passar o mouse */
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li>
+            <a href="#">Serviços</a>
+            <ul class="submenu">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Marketing</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Sobre</a>
+            <ul class="submenu">
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Equipe</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+
+</body>
+</html>
